@@ -4,6 +4,11 @@
 <head>
 <link rel="stylesheet" type="text/css" href="index.css">
 <title>Personal Page of Tam Hoang</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -11,7 +16,7 @@
 <center><table BORDER=0 CELLSPACING=2 CELLPADDING=1 width="100%">
 <TR ALIGN=Center>
 	<TD colspan=2 WIDTH="80%"><H2 Align=Center>Duc Tam Hoang</TD>
-	<TD rowspan=2><IMG SRC="tamhd_2.png" ALT="[ :-) ]" WIDTH="134" HEIGHT="150"></TD>
+	<TD rowspan=2><IMG SRC="tamhd_2.png" ALT="[ :-) ]" HEIGHT="150"></TD>
 	</TR></H2>
 <TR align=center><TD>My friends often call me <i>Tam Hoang</i> :)<br><CODE><A HREF="mailto:tamhd1990@gmail.com">Email me</A></CODE><BR>
 
@@ -26,7 +31,11 @@
 </header>
 
 <nav>
-<a href="about.html" target="iframe_main">About</a> <a href="DucTamHoang-CV.pdf" target="iframe_main">cv</a> Others
+<div class='nav'>
+<a href="about.html" class="btn btn-primary btn-sm" role="button" target="iframe_main">Home</a>
+<a href="DucTamHoang-CV.pdf" class="btn btn-primary btn-sm" role="button" target="iframe_main">Curriculum Vitae</a>
+<a href="research-interest.html" class="btn btn-primary btn-sm" role="button" target="iframe_main">Research Interest</a>
+</div>
 </nav>
 <section>
 <iframe src="about.html" name="iframe_main"></iframe>
