@@ -10,39 +10,87 @@
 <div class='res'>
 
 <p>I studied Mathematics, but that was a LONG time ago and it feels like another life now. </p>
-<p>I have been at UFAL @ Charles University in Prague, Human-Machine Interaction Laboratory @ UET and currently Computational Linguistics Laboratory @ NUS. 
-They brought me the opportunities to work with distinguished people in such interesting topics</p>
+<p>I have been to <i>HMI Laboratory</i> @ UET, then <i>Institute of Formal and Applied Mathematics </i> @ Charles University in Prague and currently <i>Computational Linguistics Laboratory</i> @ NUS. 
+Throughout the years, I have been working with a number of fields in NLP, the most notable topics are as follows.
+</p>
 <!--
 <p><i> Working in the field of computational linguistics, but I'd like to become a generalist. 
 I studied Mathematics and Computer Science, and I like to discuss other field of science as well. 
 </i></p>
 -->
 <H4 Align=Left><A NAME="qa">Question Answering</A></H4>
-<p> QA is my first research topics/projects, dated back to 2010. 
-In 2010, we started a project which aims to answer Vietnamese question in the realm of business. 
-Back then, we did not have many approaches to select. Our approach was rule-based. 
-It involves hand-crafting a set of rules to detect a question, then mapp the question to associated formula.
-Writing a pattern set that encompasses every possible questions was impossible, hence we had to stop after some point. 
+
+<p>
+Question Answering, part of Natural Language Understanding, the designated topic which tries to fool users to think that they are communicating with an artificial intelligence rather than just typing a search query in a box, was my first topic. I worked on three consecutive research QA projects from 2010 to 2012, led by the same professor. 
 </p>
 
-<p> My role in the first project was just like a programmer, who are getting familiar with pationing problems, reading papers and implementing other people's approach. However, I got attached to QA, Natual Language Understanding and NLP. I kept working with QA for another two projects. 
+<p>
+I joined the first project when I was a third-year undegraduate. 
+The team involved two people: a research assistant and me.
+The task was to answer <i>ecomonics and statistics-related questions</i>. 
+Specifically, given a question like "What is the profits gained in 2012", we needed to return the sum of all 12 months in 2012. 
+We approached the task with a rule-based approach. It involved a set of question pattern, each associated with a formula in R (programming language R). The flow was like this: <i>question -> pattern matching -> formula -> get the entity for the formula -> execute the formula -> output</i>. It worked, then we completed the project. My colleague later extend the approach a bit (using an entity classifier based on bag-of-words features) and publish a paper. 
 </p>
 
-<p> The second project was my bachelor thesis. It involves building a QA system based on Knowledge-based representation (We used Ontology OWL). However, it was problematic to transform the written-text regulation into the format of knowledge representation. Eventually, we had to do it manually. 
+<p>
+The second topic, <i>Ontology-based QA System for Regulation</i>, was my thesis. 
+I worked under the supervision of my supervisor.
+The premise of the project was to utilize the knowledge representation for QA task. 
+We faced a challenges of transforming the regulation books into the format of knowledge representation.
+The format typically involved two entities being linked by a relation while the regulation book was purely written text.
+We tried several automatic and semi-automatic methods, none of them worked. 
+Hence, a major contribution of my thesis was to convert the book into an Ontology OWL database.
+As for the QA approach, we followed another work which converted the question into an intermediate representation (a tuples of entities), then extract related entities from the knowledge representation.
 </p>
 
 <p> The third project started after I graduated. I joined a project in collaboration between the HMI laboratory and JAIST. Well, there were only two people: a student who was doing his thesis, two of our supervisors and me. A key difference between this project and two other projects is the SQL database. After much discussion, we decided to utilize the name entity recognition and bipartite graph theory to solve the problem. It sounded legit. 
-</p>
-
-<p> However, the other guy quited after a few months. I carried out the work for another few months before we concluded that we needed more people. We halted the project after getting the first results. The report for our project got accepted to KSE 2015.
+However, the other guy quited after a few months. I carried out the work for another few months before we concluded that we needed more people. We halted the project after getting the first results. The report for our project got accepted to KSE 2015.
 </p>
 
 
 <H4 Align=Left><A NAME="sa">Sentiment Analysis</A></H4>
 
+<p>
+Sentiment Analysis, or Opinion mining, the task you always do when reading feedbacks about the new iPhone before you buy it anyway, was one of my favourite.
+We made use of the movie reviews collection, trying to predict whether a review is positive or negative.
+The task is document-level sentiment analysis with just two classes. We primarily aimed to improve the quality of the binary classification by feature selection. We made that decision after admitting that no matter how many methods we tried (Naive Bayes, Random Forest, Majority Voting), they could not outperform the SVM learning method. 
+</p>
+
+<p>
+Fixed the bag of n-gram features, we mindlessly tried numerous feature selection techniques, including Information Gain, Chi-Square Statistics, Gini Index, etc. We also tried PCA (principle component analysis), the forward and backward feature selection. We also figured out that TF-IDF value did not work better than binary value and our datatset of 2000 instances was unstable. After a while, both my supervisor and I ran out of idea, so we stopped. 
+</p>
+
+<H4 Align=Left><A NAME="smt">Information Retrieval</A></H4>
+<p>
+An IR-guy once told me: Information Retrieval is not Natual Language Processing. 
+Arguably, he was right. I came into contact with IR in several minor projects. 
+We did our assignment of the IR course by building an IR system based on feature space vectors, TF-IDF representation and cosine similarity. The result was greatly improved by the pivot method, which included the length factor in the similarity formula. On the other hand, query expansion and relevance feedback did not work very well in our experiments.
+</p>
+<p>
+I also used IR system to perform domain adaptation when I worked with statistical machine translation. I did not exploit the the IR system much. I used Lucene to index the collection (corpus) and setting weight to each keyword of the query.
+</p>
+
+
 <H4 Align=Left><A NAME="smt">Statistical Machine Translation</A></H4>
+<p>
+Machine Translation, my lifelong love, the task when non-MT people constantly tell you "Why do you bother doing it, it is useless, Google Translate is already great". Hmm, they do have a point when everyone is trying to compare their results with Google's, don't we all?. 
+</p>
+
+<p>
+I started working on MT with a small project led by Dr. Ondrej Bojar, domain adaptation by selecting in-domain data. I later moved on to another project called Pivoting SMT, which was my master thesis. 
+We decided to build an SMT system for Czech and Vietnamese (both directions). Well, it had Vietnamese because I am Vietnamese. It has Czech because we were in the Czech Republic. Moreover, no one had worked on such a difficult language pair. It was difficult because not only the two language were totally different but also there were not enough data.
+</p>
+
+<p>
+I spent time playing with Moses, banging my head against EMAN. Simultaneously, we collect data for Czech and Vietnamese. The first experiments received an awful results, due to the high level of noise in the data. We later perform data cleaning. Then we implemented and tried out various methods for pivoting MT. Finally, my thesis was just a cookbook which describes all the potential methods to pivoting MT with example of Czech-Vietnamese translation. 
+</p>
 
 <H4 Align=Left><A NAME="gec">Grammatical Error Correction</A></H4>
+<p>
+Gramatical Error Correction, when machine does the English proofreading, is my ongoing project. 
+</p>
+
+
 </div>
 
 </body>
