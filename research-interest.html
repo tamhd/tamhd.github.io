@@ -12,9 +12,14 @@
 
 <div class='general'>
 
-<p>I studied Mathematics, but that was a LONG time ago and it feels like another life now. </p>
-<p>I have been to <i>HMI Laboratory</i> @ UET, then <i>Institute of Formal and Applied Mathematics </i> @ Charles University in Prague and currently <i>Computational Linguistics Laboratory</i> @ NUS. 
-Throughout the years, I have been working with a number of fields in NLP, the most notable topics are as follows.
+<p>I studied Mathematics, but that was a LONG time ago and it feels like another life now. This page is devoted to describe my experience with Computer Science (specifically Computational Linguistics).
+</p>
+
+<p>
+I see myself as a drifter, who keeps bouncing from one facility to another. 
+I have worked at <i>HMI Laboratory</i> @ UET, then <i>Institute of Formal and Applied Mathematics </i> @ Charles University in Prague and now <i>Computational Linguistics Laboratory</i> @ NUS. 
+On the one hand, I am quite tired of moving. 
+On the other hand, it provides me the opportunity to broaden my horizon (I think), alows me to work with a number of topics, in which the most notable ones are as follows.
 </p>
 <!--
 <p><i> Working in the field of computational linguistics, but I'd like to become a generalist. 
@@ -26,26 +31,26 @@ I studied Mathematics and Computer Science, and I like to discuss other field of
   <h4>Question Answering: &nbsp;<button type="button" class="btn btn-primary btn-xs btn-info" data-toggle="collapse" data-target="#demoQA">Show/Hide</button></h4> 
   <div id="demoQA" class="collapse">
 	<p>
-	Question Answering, part of Natural Language Understanding, the designated topic which tries to fool users to think that they are communicating with an artificial intelligence rather than just typing a search query in a box, was my first topic. I worked on three consecutive research QA projects from 2010 to 2012, led by the same professor. 
+	Question Answering, part of Natural Language Understanding, the designated topic which tries to fool users that they are communicating with an artificial intelligence when typing a search query in a box, was my first topic. I worked on three consecutive QA projects from 2010 to 2012. 
 	</p>
 
 	<p>
-	I joined the first project when I was a third-year undegraduate. 
-	The team involved two people: a research assistant and me.
-	The task was to answer <i>ecomonics and statistics-related questions</i>. 
-	Specifically, given a question like "What is the profits gained in 2012", we needed to return the sum of all 12 months in 2012. 
-	We approached the task with a rule-based approach. It involved a set of question pattern, each associated with a formula in R (programming language R). The flow was like this: <i>question -> pattern matching -> formula -> get the entity for the formula -> execute the formula -> output</i>. It worked, then we completed the project. My colleague later extend the approach a bit (using an entity classifier based on bag-of-words features) and publish a paper. 
+	I joined the first project when I was in the third year of my undegraduate programme.
+	Supervised by professor <a href="http://uet.vnu.edu.vn/~sonpb/">Son Bao Pham</a>, our team (a research assistant and me) built a QA system for the <i>ecomonics and statistics-related domain</i>.
+	An example of questions is like "How much does company X pay in taxes in 2012".
+	We approached the problem with a rule-based approach and a set of mathematics formulae in programming language <a href="https://www.r-project.org/about.html">R</a>. 
+	The flow was like this: <i>question -> pattern matching -> formula \& question entities -> execute the formula -> output</i>. It worked, so we completed the project. My colleague later extended the approach a bit (using machine learning with bag-of-words features). 
 	</p>
 
 	<p>
-	The second topic, <i>Ontology-based QA System for Regulation</i>, was my thesis. 
-	I worked under the supervision of my supervisor.
-	The premise of the project was to utilize the knowledge representation for QA task. 
-	We faced a challenges of transforming the regulation books into the format of knowledge representation.
-	The format typically involved two entities being linked by a relation while the regulation book was purely written text.
+	The second topic, <i>Ontology-based QA System for Regulation</i>, was my bachelor thesis. 
+	The premise of the project was to utilize knowledge representation for QA tasks. 
+	We had to build a system which can prove that knowledge representation, such as Ontology OWL, is useful for question ansering. 
+	The greatest challenged I faced in the project had to be the data transformation. 
+	It was the task of creating an Ontology OWL format, which typically involved two entities being linked by a relation, from the regulation book, which, you know, contains something else.
 	We tried several automatic and semi-automatic methods, none of them worked. 
-	Hence, a major contribution of my thesis was to convert the book into an Ontology OWL database.
-	As for the QA approach, we followed another work which converted the question into an intermediate representation (a tuples of entities), then extract related entities from the knowledge representation.
+	Hence, the data creation was done manually.
+	As for the approach, we followed another work which converted the question into an intermediate representation (a tuples of entities), then extract related entities from the knowledge representation.
 	</p>
 
 	<p> The third project started after I graduated. I joined a project in collaboration between the HMI laboratory and JAIST. Well, there were only two people: a student who was doing his thesis, two of our supervisors and me. A key difference between this project and two other projects is the SQL database. After much discussion, we decided to utilize the name entity recognition and bipartite graph theory to solve the problem. It sounded legit. 
