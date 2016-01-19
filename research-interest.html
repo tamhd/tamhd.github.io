@@ -35,26 +35,30 @@ I studied Mathematics and Computer Science, and I like to discuss other field of
 	</p>
 
 	<p>
-	I joined the first project when I was in the third year of my undegraduate programme.
-	Supervised by professor <a href="http://uet.vnu.edu.vn/~sonpb/">Son Bao Pham</a>, our team (a research assistant and me) built a QA system for the <i>ecomonics and statistics-related domain</i>.
-	An example of questions is like "How much does company X pay in taxes in 2012".
+	I joined the first project sometimes in my third year of my undegraduate programme.
+	Supervised by professor <a href="http://uet.vnu.edu.vn/~sonpb/">Son Bao Pham</a>, our team was tasked to build a QA system for the <i>ecomonics and statistics-related domain</i>.
+	Question, for example, is "How much does company X pay in taxes in 2012".
 	We approached the problem with a rule-based approach and a set of mathematics formulae in programming language <a href="https://www.r-project.org/about.html">R</a>. 
-	The flow was like this: <i>question -> pattern matching -> formula \& question entities -> execute the formula -> output</i>. It worked, so we completed the project. My colleague later extended the approach a bit (using machine learning with bag-of-words features). 
+	The flow was like this: <i>question -> pattern matching -> formula \& question entities -> execute the formula -> output</i>. It worked, we completed the project. My colleagues later extended the approach using machine learning with bag-of-words features. 
 	</p>
 
 	<p>
-	The second topic, <i>Ontology-based QA System for Regulation</i>, was my bachelor thesis. 
+	The second topic, <i>Ontology-based QA System for Regulation</i>, was my undergraduate thesis. 
 	The premise of the project was to utilize knowledge representation for QA tasks. 
-	We had to build a system which can prove that knowledge representation, such as Ontology OWL, is useful for question ansering. 
 	The greatest challenged I faced in the project had to be the data transformation. 
-	It was the task of creating an Ontology OWL format, which typically involved two entities being linked by a relation, from the regulation book, which, you know, contains something else.
+	The sub-task was to transform rules of the regulation book into Ontology OWL format, which typically involved two entities being linked by a relation.
 	We tried several automatic and semi-automatic methods, none of them worked. 
-	Hence, the data creation was done manually.
-	As for the approach, we followed another work which converted the question into an intermediate representation (a tuples of entities), then extract related entities from the knowledge representation.
+	Finally, we decided to manually transform the rules.
+	As for the approach, we approach the problem by converting input into an intermediate representation (a tuple of entities), then extracting related entities from the knowledge representation.
 	</p>
-
-	<p> The third project started after I graduated. I joined a project in collaboration between the HMI laboratory and JAIST. Well, there were only two people: a student who was doing his thesis, two of our supervisors and me. A key difference between this project and two other projects is the SQL database. After much discussion, we decided to utilize the name entity recognition and bipartite graph theory to solve the problem. It sounded legit. 
-	However, the other guy quited after a few months. I carried out the work for another few months before we concluded that we needed more people. We halted the project after getting the first results. The report for our project got accepted to KSE 2015.
+	
+	<p>
+	After gradudating, i joined the HMI Laboratory. My third QA topic was a project in collaboration between the HMI laboratory and JAIST. 
+	A key difference between this project and two other projects was the SQL database. 
+	Formally, the task was to transform a natural question into an structured query. 
+	After much discussion, our solution was to utilize the name entity recognition and bipartite graph theory to solve the problem. 
+	The project went up and down, but we managed to finish it in the end.
+	The report for our project got accepted to KSE 2015.
 	</p>
   </div>
 </div>
@@ -64,13 +68,15 @@ I studied Mathematics and Computer Science, and I like to discuss other field of
   <h4>Sentiment Analysis: &nbsp;<button type="button" class="btn btn-primary btn-xs btn-info" data-toggle="collapse" data-target="#demoSA">Show/Hide</button></h4> 
   <div id="demoSA" class="collapse">
 	<p>
-	Sentiment Analysis, or Opinion mining, the task you always do when reading feedbacks about the new iPhone before you buy it anyway, was one of my favourite.
-	We made use of the movie reviews collection, trying to predict whether a review is positive or negative.
-	The task is document-level sentiment analysis with just two classes. We primarily aimed to improve the quality of the binary classification by feature selection. We made that decision after admitting that no matter how many methods we tried (Naive Bayes, Random Forest, Majority Voting), they could not outperform the SVM learning method. 
+	Sentiment Analysis, or Opinion mining, the task you always do when reading feedbacks about the new iPhone before you buy it anyway, was one of my favourites.
+	Using the collection of movie reviews as development data, we aimed to classify whether a review is positive or negative.
+	The task is document-level sentiment analysis with two classes. 
+	We primarily focused on feature selection for machine learning. 
+	As for the machine learning method, we tried a few, in which SVM outperformed Naive Bayes, Random Forest and Majority Voting.
 	</p>
 
 	<p>
-	Fixed the bag of n-gram features, we mindlessly tried numerous feature selection techniques, including Information Gain, Chi-Square Statistics, Gini Index, etc. We also tried PCA (principle component analysis), the forward and backward feature selection. We also figured out that TF-IDF value did not work better than binary value and our datatset of 2000 instances was unstable. After a while, both my supervisor and I ran out of idea, so we stopped. 
+	Fixed the bag of n-gram features, we tried numerous feature selection techniques, including Information Gain, Chi-Square Statistics, Gini Index, etc. We also tried PCA (principle component analysis), the forward and backward feature selection. We also figured out that our datatset of 2000 instances was unstable. After a while, both my supervisor and I ran out of idea, so we stopped. 
 	</p>
 
   </div>
@@ -81,11 +87,11 @@ I studied Mathematics and Computer Science, and I like to discuss other field of
   <div id="demoIR" class="collapse">
 	<p>
 	An IR-guy once told me: Information Retrieval is not Natual Language Processing. 
-	Arguably, he was right. I came into contact with IR in several minor projects. 
-	We did our assignment of the IR course by building an IR system based on feature space vectors, TF-IDF representation and cosine similarity. The result was greatly improved by the pivot method, which included the length factor in the similarity formula. On the other hand, query expansion and relevance feedback did not work very well in our experiments.
+	Arguably, he was right, yet I joined a course of IR in the Computational Linguistic programme. 
+	We did our assignment of the IR course by building an IR system based on feature space vectors, TF-IDF representation and cosine similarity. The result was greatly improved by the pivot method, which included the length factor in the similarity formula.
 	</p>
 	<p>
-	I also used IR system to perform domain adaptation when I worked with statistical machine translation. I did not exploit the the IR system much. I used Lucene to index the collection (corpus) and setting weight to each keyword of the query.
+	I also come across IR when I worked with domain adaptation for statistical machine translation. In that particular project, I used Lucene to index the collection (corpus) and setting weight to each keyword of the query.
 	</p>
   </div>
 </div>
@@ -94,16 +100,16 @@ I studied Mathematics and Computer Science, and I like to discuss other field of
   <h4>Statistical Machine Translation: &nbsp;<button type="button" class="btn btn-primary btn-xs btn-info" data-toggle="collapse" data-target="#demoSMT">Show/Hide</button></h4> 
   <div id="demoSMT" class="collapse">
 	<p>
-	Machine Translation, my lifelong love, the task when non-MT people constantly tell you "Why do you bother doing it, it is useless, Google Translate is already great". Hmm, they do have a point when everyone is trying to compare their results with Google's, don't we all?. 
+	Machine Translation, my lifelong love, the task when non-MT people constantly tell you "Why do you bother doing it, it is useless, you would never beat Google Translate". Hmm, they do have a point when everyone often compares their results with Google's, don't we all?. 
 	</p>
 
 	<p>
-	I started working on MT with a small project led by Dr. Ondrej Bojar, domain adaptation by selecting in-domain data. I later moved on to another project called Pivoting SMT, which was my master thesis. 
-	We decided to build an SMT system for Czech and Vietnamese (both directions). Well, it had Vietnamese because I am Vietnamese. It has Czech because we were in the Czech Republic. Moreover, no one had worked on such a difficult language pair. It was difficult because not only the two language were totally different but also there were not enough data.
+	I started with a small group project led by Dr. Ondrej Bojar, domain adaptation by selecting in-domain data. I later moved on to another project called Pivoting SMT, which was my master thesis. 
+	We decided to build an SMT system for Czech and Vietnamese (both directions). It was a difficult language pair, partly due to the different linguistic features and partly due to the lack of training data. Not surprisingly, no one had worked on such pair before.
 	</p>
 
 	<p>
-	I spent time playing with Moses, banging my head against EMAN. Simultaneously, we collect data for Czech and Vietnamese. The first experiments received an awful results, due to the high level of noise in the data. We later perform data cleaning. Then we implemented and tried out various methods for pivoting MT. Finally, my thesis was just a cookbook which describes all the potential methods to pivoting MT with example of Czech-Vietnamese translation. 
+	I spent time playing with Moses. Simultaneously, we collected data for Czech and Vietnamese. The first experiments received awful results, caused by the high level of noise in the dataset. We performed data cleaning. Then we implemented and tried out various methods for pivoting MT. Finally, my thesis was like a cookbook which described all potential methods to pivoting MT with an example of Czech-Vietnamese translation. 
 	</p>
   </div>
 </div>
@@ -112,7 +118,7 @@ I studied Mathematics and Computer Science, and I like to discuss other field of
   <h4>Grammatical Error Correction: &nbsp;<button type="button" class="btn btn-primary btn-xs btn-info" data-toggle="collapse" data-target="#demoGEC">Show/Hide</button></h4> 
   <div id="demoGEC" class="collapse">
 	<p>
-	Gramatical Error Correction, when machine does the English proofreading, is my ongoing project. 
+	Gramatical Error Correction, when machine does the English proofreading, is my current topic. I'll come back to finish the description soon. 
 	</p>
   </div>
 </div>
