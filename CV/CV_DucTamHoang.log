@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.2)  2 MAY 2016 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.21)  11 MAY 2016 15:59
 entering extended mode
-**./CV_DucTamHoang.tex
+**CV_DucTamHoang.tex
 (CV_DucTamHoang.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\extsizes\extreport.cls"
 Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\extsizes\size9.clo"
@@ -667,8 +667,6 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 71.
 Package hyperref Info: Option `breaklinks' set `true' on input line 71.
 
 (CV_DucTamHoang.aux)
-\openout1 = `CV_DucTamHoang.aux'.
-
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 168.
 LaTeX Font Info:    Try loading font information for OML+jkp on input line 168.
 
@@ -736,8 +734,6 @@ LaTeX Info: Redefining \nameref on input line 168.
 
 (CV_DucTamHoang.out) (CV_DucTamHoang.out)
 \@outlinefile=\write3
-\openout3 = `CV_DucTamHoang.out'.
-
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -790,18 +786,12 @@ LaTeX Info: Redefining \nameref on input line 168.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 168.
-<tamhd_2.png, id=35, 602.25pt x 737.75626pt>
-File: tamhd_2.png Graphic file (type png)
- <use tamhd_2.png>
-Package pdftex.def Info: tamhd_2.png used on input line 172.
-(pdftex.def)             Requested size: 71.13188pt x 87.13103pt.
 \rcollength=\skip66
 LaTeX Font Info:    Font shape `T1/jkpss/m/it' in size <9> not available
 (Font)              Font shape `T1/jkpss/m/sl' tried instead on input line 181.
 
 LaTeX Font Info:    Try loading font information for TS1+jkpss on input line 21
 1.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\kpfonts\ts1jkpss.fd"
 File: ts1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for TS1/jkpss.
 )
@@ -836,8 +826,7 @@ LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 306
 File: ujkpsyc.fd 2006/08/15 v1.0
 ) [1
 
-{C:/Users/Hoangt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./tamhd_2.
-png>]
+{C:/Users/workshop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 AED: lastpage setting LastPage
 [2]
@@ -851,13 +840,13 @@ Package rerunfilecheck Info: File `CV_DucTamHoang.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 398.
  ) 
 Here is how much of TeX's memory you used:
- 8219 strings out of 493634
- 115810 string characters out of 3143742
- 201088 words of memory out of 3000000
- 11466 multiletter control sequences out of 15000+200000
+ 8213 strings out of 493673
+ 115732 string characters out of 3143950
+ 199940 words of memory out of 3000000
+ 11425 multiletter control sequences out of 15000+200000
  78850 words of font info for 86 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 34i,8n,43p,305b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,8n,43p,303b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/P
 rogram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -866,9 +855,9 @@ ype1/public/kpfonts/jkpmn8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 jkpssmn8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpssmn8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpssmne.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpssmsc8a.pfb>
-Output written on CV_DucTamHoang.pdf (2 pages, 849395 bytes).
+Output written on CV_DucTamHoang.pdf (2 pages, 57127 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
