@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <title>Personal Page of Tam Hoang</title>
@@ -11,93 +12,112 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  body {
+    body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
-  }
-  h2 {
+    }
+
+    h2 {
       font-size: 24px;
       text-transform: uppercase;
       color: #303030;
       font-weight: 600;
       margin-bottom: 30px;
-  }
-  h4 {
+    }
+
+    h4 {
       font-size: 19px;
       line-height: 1.375em;
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }
-  .jumbotron {
+    }
+
+    .jumbotron {
       background-color: #1e85f4;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .container-fluid-hidden {
-      display:none;
-  }
+    }
 
-  .bg-grey {
+    .container-fluid {
+      padding: 60px 50px;
+    }
+
+    .container-fluid-hidden {
+      display: none;
+    }
+
+    .bg-grey {
       background-color: #f6f6f6;
-  }
-  .logo-small {
+    }
+
+    .logo-small {
       color: #f4511e;
       font-size: 50px;
-  }
-  .logo {
+    }
+
+    .logo {
       color: #f4511e;
       font-size: 200px;
-  }
-  .thumbnail {
+    }
+
+    .thumbnail {
       padding: 0 0 15px 0;
       border: none;
       border-radius: 0;
-  }
-  .thumbnail img {
+    }
+
+    .thumbnail img {
       width: 100%;
       height: 100%;
       margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
       background-image: none;
       color: #f4511e;
-  }
-  .carousel-indicators li {
+    }
+
+    .carousel-indicators li {
       border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
+    }
+
+    .carousel-indicators li.active {
       background-color: #f4511e;
-  }
-  .item h4 {
+    }
+
+    .item h4 {
       font-size: 19px;
       line-height: 1.375em;
       font-weight: 400;
       font-style: italic;
       margin: 70px 0;
-  }
-  .item span {
+    }
+
+    .item span {
       font-style: normal;
-  }
-  .panel {
+    }
+
+    .panel {
       border: 1px solid #f4511e;
-      border-radius:0 !important;
+      border-radius: 0 !important;
       transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
+    }
+
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+    }
+
+    .panel-footer .btn:hover {
       border: 1px solid #f4511e;
       background-color: #fff !important;
       color: #f4511e;
-  }
-  .panel-heading {
+    }
+
+    .panel-heading {
       color: #fff !important;
       background-color: #f4511e !important;
       padding: 25px;
@@ -106,23 +126,28 @@
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
+    }
+
+    .panel-footer {
       background-color: white !important;
-  }
-  .panel-footer h3 {
+    }
+
+    .panel-footer h3 {
       font-size: 32px;
-  }
-  .panel-footer h4 {
+    }
+
+    .panel-footer h4 {
       color: #aaa;
       font-size: 14px;
-  }
-  .panel-footer .btn {
+    }
+
+    .panel-footer .btn {
       margin: 15px 0;
       background-color: #f4511e;
       color: #fff;
-  }
-  .navbar {
+    }
+
+    .navbar {
       margin-bottom: 0;
       background-color: #1e85f4;
       z-index: 9999;
@@ -132,545 +157,537 @@
       letter-spacing: 4px;
       border-radius: 0;
       font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
       color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
       color: #f4511e !important;
       background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
+    }
+
+    .navbar-default .navbar-toggle {
       border-color: transparent;
       color: #fff !important;
-  }
-  footer .glyphicon {
+    }
+
+    footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
       color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
+    }
+
+    .slideanim {
+      visibility: hidden;
+    }
+
+    .slide {
       animation-name: slide;
       -webkit-animation-name: slide;
       animation-duration: 1s;
       -webkit-animation-duration: 1s;
       visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
     }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
+
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
     }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
+
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .btn-lg {
         width: 100%;
         margin-bottom: 35px;
+      }
     }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
+
+    @media screen and (max-width: 480px) {
+      .logo {
         font-size: 150px;
+      }
     }
-  }
   </style>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Tam Hoang</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <!--li><a href="#pricing">PRICING</a></li-->
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>Duc Tam Hoang</h2><br>
-
-      <p>Hi!
-        Welcome to my personal page.
-        My name is Tam, currently a data scientist at Garena Group, Shopee.
-        Previously, I was at the National University of Singapore,
-        Charles University (research in
-        Natural Language Processing).
-        These days, I am quite occupied with e-commerce tasks.
-      </p>
-       <p>I enjoy watching movies (many genres),
-         listening to music (many genres),
-       taking pictures,
-       trekking into nature,
-       and especially discussing about languages
-         (well, my major is that of Computational Linguistics).
-       Talk to me, I won't bite. </p>
-
-      <p>For other information, please follow any of the following resources:</p>
-      <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/duc-tam-hoang-51431761/">LinkedIn</a>
-      <CODE><A  class="btn btn-default btn-lg"  HREF="mailto:tamhd.nus@gmail.com">Email</A></CODE>
-      <a class="btn btn-default btn-lg" href="tamhd_2.png">Formal CV</a>
-      <A class="btn btn-default btn-lg" HREF="publications.html">Publications</A>
-      <br>
-      <h6><i>* The CV is outdated. But personal email is still <a href="mailto:tamhd.nus@gmail.com">active</a></i></h6>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon logo"><img src="tamhd_2.png" alt="Avatar" style="width:250px"></span>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What I offer</h4>
-
-  <div align="center">
-    <p>Here you can find my personal products,
-      which I can share. Just click onto them for greater details.</p>
-  </div>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <a href="http://104.198.245.238:9494">
-      <span class="glyphicon glyphicon-refresh logo-small"></span>
-      <h4>vi-accenter</h4>
-      </a>
-      <strong>Vietnamese Accent Restoration</strong>
-      <div align="justify">
-      I wrote this program a while ago.
-        Recently, I decided to deploy it to my server.
-      Current version is based on Hidden Markov Model (HMM) trained
-        on multiple domains.
-
-        <p>My current server is shamefully weak, so the program is a bit slow :(</p>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">Tam Hoang</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">DEMO</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <!--li><a href="#pricing">PRICING</a></li-->
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
     </div>
-    <div class="col-sm-4">
-      <a href="https://github.com/tamhd/MultiMT">
-      <span class="glyphicon glyphicon-triangle-right logo-small"></span>
-      <h4>machine-translation-triangulation</h4>
-      </a>
-      <div align="justify">
-      <p>Most of my projects have been
-      confidential, except this one.
-      I found it quite difficult to translate from one language
-        to another without sufficient parallel dataset, so I wrote
-        one to help. It was compatible with
-        <a href="http://www.statmt.org/moses/">Moses</a>.
-      </p>
-      <p>Warning: The program has not been maintained for a while.</p>
+  </nav>
+
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2></h2>
+
+        <p>Hi stranger! Welcome to my personal space!
+          I hope you're having an amazing day!</p>
+
+        <p>
+          At the moment, I am either sleeping or having a conversation with ... you!
+          About me, I like movies, songs, photography, trekking into nature and
+          especially discussing about languages
+          (well, my major is that of Computational Linguistics).
+        </p>
+        <p>
+          Talk to me, I won't bite!
+        </p>
+
+        <p>Formally, please follow any of the following resources for further information:</p>
+        <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/duc-tam-hoang-51431761/">LinkedIn</a>
+        <CODE><A  class="btn btn-default btn-lg"  HREF="mailto:tamhd.nus@gmail.com">Email</A></CODE>
+        <a class="btn btn-default btn-lg" href="tamhd_2.png">Formal CV</a>
+        <A class="btn btn-default btn-lg" HREF="publications.html">Publications</A>
+        <br>
+        <h6><i>* The CV is outdated, but my personal email is still <a href="mailto:tamhd.nus@gmail.com">active</a></i>
+        </h6>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>upcoming-nlp</h4>
-      <div align="justify">
-      <p> As said, my major is Computational Linguistics.
-        I enjoy building a real NLP product (tokenizer, POS tagger,
-        sentiment analysis, machine translation system, etc)
-        more than writing papers to conferences.
-        My upcoming plan is to build an nlp tool with RNN/LSTM,
-        pls stay tuned.</p>
+      <div class="col-sm-4">
+        <span class="glyphicon logo"><img src="tamhd_2.png" alt="Avatar" style="width:250px"></span>
       </div>
     </div>
   </div>
-  <br>
-</div>
 
-<!-- Container (Services Section) -->
-<div id="experience" class="container-fluid text-center">
-  <h2>EXPERIENCE</h2>
-  <h4>What I do. What I did.</h4>
-  <p>
-    My daily job involves big data processing (clean, display,
-    analysis, etc), Machine Learning and occasionally production.
-      I have experience in Fraud Detection, text mining and
-      especially Natural Language Processing.
-    </p>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <a href="http://104.198.245.238:9494">
-      <span class="glyphicon logo-small">MT</span>
-      <h4>Machine Translation</h4>
-      </a>
+  <!-- Container (Services Section) -->
+  <div id="services" class="container-fluid text-center">
+    <h2>DEMO</h2>
+    <h4>Here you can find my personal products, all of which are associated with NLP.</h4>
+    <div align="center">
 
-      <div align="justify">
-        The task when non-MT people constantly
-        tell me: "Why bother doing it, useless,
-        you would never beat Google Translate".
-        Hmm, I disagree.
-        <br><br>
-        I was heavily involved in Statistical MT for around 2 years,
-        primarily phrase-based approaches. Now I am excited again
-        because of Neural MT.
-        <br><br>
-      </div>
     </div>
-    <div class="col-sm-4">
-      <a href="https://github.com/tamhd/MultiMT">
-      <span class="glyphicon logo-small">GEC</span>
-      <h4>Grammatical Error Correction</h4>
-      </a>
-      <div align="justify">
-      <p> Research
-        into the possibility of automatically correct written
-        English. Mainly, the task was formulated as 'translating
-        erroneous input into proper English' (thanks to MT).
-
-        <br><br>
-        Competing with state-of-the-art solution and tier-1 NLP
-        groups worldwide was a thrilling experience.
-        <br><br>
-      </p>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <a href="#services">
+          <span class="glyphicon glyphicon-refresh logo-small"></span>
+          <h4>vi-accenter</h4>
+        </a>
+        <strong>Vietnamese Accent Restoration</strong>
+        <div align="justify">
+          I wrote this program a while ago. It was based on Hidden Markov Model (HMM).
+          <p><del>My current server is shamefully weak, so the program is a bit slow :(</del>
+          The live demo is no longer available due to me being lazy and not maintaining the server. </p>
+        </div>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-warning-sign logo-small"></span>
-      <h4>Fraud Detection</h4>
-      <div align="justify">
-      Fall in the same category as outlier detection, anomaly detection, etc.
-       It is a pain to every internet company, and each company
-        has its own definition. I participated in not only machine
-        learning modeling, system production but also operational
-        activities.
-
-        <br><br>
-        Fun fact: unlike other projects, this is not related to NLP.
-        <br><br>
-      </p>
+      <div class="col-sm-4">
+        <a href="https://github.com/tamhd/MultiMT">
+          <span class="glyphicon glyphicon-triangle-right logo-small"></span>
+          <h4>machine-translation-triangulation</h4>
+        </a>
+        <div align="justify">
+          <p> When I was doing research in Machine Translation,
+            it was difficult to build a decent model without sufficient parallel dataset,
+            so I wrote a tool to triagulate via a third language. It was compatible with
+            <a href="http://www.statmt.org/moses/">Moses</a>.
+          </p>
+          <p>Warning: The program has not been maintained for a while.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-user logo-small"></span>
+        <h4>conversational-agent</h4>
+        <div align="justify">
+          <p> When chatbot was hot (not sure if it still is), I built one.
+            It was an RNN model mimicking the translation process.
+            In the previous iteration of this page, there was a chatbot at the bottom right.
+            However, due to me being lazy and not maintaining the server, it's no longer available.
+</p>
+        </div>
       </div>
     </div>
     <br>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
-      <h4>Sentiment Analysis</h4>
-      <div align="justify">
-      <br>
-        Sentiment Analysis, or Opinion mining, the thing most
-        people care about what other are saying.
-        My project was to predict a movie review as 'positive'
-        or 'negative' using Machine Learning.
-        It was a document-level sentiment analysis with just two
-        classes.
-        <br><br>
-        It is in fact a very important tasks nowadays
-        regarding news, feedback, reviews, etc.
-      </p>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <span class="glyphicon logo-small">IR</span>
-      <h4>Information Retrieval</h4>
-      <div align="justify">
-      <br>
-        It is about giving users the most relevant documents.
-        Not only is IR an important field on its own, but it
-        also helps other task.
-        <br><br>
-        I come across IR not one, but three times. Each time
-        I needed to use a different tactics: string edit distance,
-        vector space model and Lucene/Solr library.
-      </p>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <span class="glyphicon logo-small">QA</span>
-      <h4>Question Answering</h4>
-      <div align="justify">
-      <br>
-        While IR tries to return relevant documents,
-        QA being more advanced tries to answer the question
-        in customer's mind.
-        It is indeed a difficult topic of Natural Language Generation.
-
-        <br><br>
-        From 2010 to 2012, my methods were rule-based (hand-crafted macro based
-        on GATE regular expression) and knowledge-based (Ontology).
-        However, the field has changed dramatically since.
-      </p>
-      </div>
-    </div>
-
   </div>
-  <br>
 
-  <br>
-</div>
+  <!-- Container (Services Section) -->
+  <div id="experience" class="container-fluid text-center">
+    <h2>EXPERIENCE</h2>
+    <h4>My daily job used to involve big data, Machine Learning and occasionally production.
+      </h4>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>This is my space, place of my personal hobbies.</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="pictures/newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>Overrated, but Unique</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="pictures/singapore.jpg" alt="Singapore" width="400" height="300">
-        <p><strong>Singapore</strong></p>
-        <p>The island has more to offer than it looks</p>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="pictures/bangkok.jpg" alt="BangKok" width="400" height="300">
-        <p><strong>Bangkok</strong></p>
-        <p>A bit dirty, but amazing food</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="pictures/prague.jpg" alt="Prague" width="400" height="300">
-        <p><strong>Prague</strong></p>
-        <p>An amazing city</p>
-      </div>
-    </div>
-  <div class="col-sm-4">
-      <div class="thumbnail">
-        <a href="#">
-        <img src="pictures/hochiminh.jpg" alt="HCM" width="400" height="300">
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <a href="http://104.198.245.238:9494">
+          <span class="glyphicon logo-small">MT</span>
+          <h4>Machine Translation</h4>
         </a>
-        <p><strong>Ho Chi Minh City</strong></p>
-        <p>Ho Chi Minh City to Hanoi is like Shanghai to Beijing</p>
+
+        <div align="justify">
+          The task when non-MT people constantly
+          tell me: "Why bother doing it, useless,
+          you would never beat Google Translate".
+          <br><br>
+          I was heavily involved in Statistical MT for around 2 years,
+          primarily phrase-based approaches. Now the field is all about Neural MT (exited!).
+          <br><br>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://github.com/tamhd/MultiMT">
+          <span class="glyphicon logo-small">GEC</span>
+          <h4>Grammatical Error Correction</h4>
+        </a>
+        <div align="justify">
+          <p> Research
+            into the possibility of automatically correct written
+            English. Mainly, it was formulated as 'translating
+            erroneous input into proper English' (thanks to MT).
+
+            <br><br>
+            Competing with state-of-the-art solution and tier-1 NLP
+            groups worldwide was honestly thrilling.
+            <br><br>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-lock logo-small"></span>
+        <h4>Fraud Detection</h4>
+        <div align="justify">
+          Fraudulent activities are critical problems of every internet company, ranging from bank to e-commerce.
+          Each has their own definition. I was lucky to be involed in not only machine
+          learning modeling, system production but also operational
+          activities.
+          <br><br>
+          Fun fact: unlike the other projects, it is not NLP!
+          <br><br>
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+        <h4>Sentiment Analysis</h4>
+        <div align="justify">
+          <br>
+          Sentiment Analysis, or Opinion mining, trying to guess whether
+          the text has positive or negative connotation.
+          My project targeted the problem of document-level sentiment analysis with IMDB movie reviews.
+          <br><br>
+          It is in fact a very important tasks nowadays
+          regarding news, feedback, reviews, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <span class="glyphicon logo-small">IR</span>
+        <h4>Information Retrieval</h4>
+        <div align="justify">
+          <br>
+          It is about giving users the most relevant documents.
+          Not only is IR an important field on its own, but it
+          also helps other task.
+          <br><br>
+          I came across IR not one, not two, but three times. Each
+          with a different solution: string edit distance,
+          vector space model and Lucene/Solr library.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <span class="glyphicon logo-small">QA</span>
+        <h4>Question Answering</h4>
+        <div align="justify">
+          <br>
+          QA tries to answer the question
+          in customer's mind.
+          As part of NLU, it is one of the most difficult topics in NLP.
+
+          <br><br>
+          From 2010 to 2012, we relied on rule-based (hand-crafted GATE regex macro) and knowledge-based (Ontology).
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+    <br>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div id="portfolio" class="container-fluid text-center bg-grey">
+    <h2>Portfolio</h2><br>
+    <h4>This is my space, place of my personal hobbies.</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="pictures/newyork.jpg" alt="New York" width="400" height="300">
+          <p><strong>New York</strong></p>
+          <p>Overrated, but Unique</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="pictures/singapore.jpg" alt="Singapore" width="400" height="300">
+          <p><strong>Singapore</strong></p>
+          <p>The island has more to offer than it looks</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="pictures/bangkok.jpg" alt="BangKok" width="400" height="300">
+          <p><strong>Bangkok</strong></p>
+          <p>A bit dirty, but amazing food</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="pictures/prague.jpg" alt="Prague" width="400" height="300">
+          <p><strong>Prague</strong></p>
+          <p>An amazing city</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="#">
+            <img src="pictures/hochiminh.jpg" alt="HCM" width="400" height="300">
+          </a>
+          <p><strong>Ho Chi Minh City</strong></p>
+          <p>Ho Chi Minh City to Hanoi is like Shanghai to Beijing</p>
+        </div>
+      </div>
+    </div><br>
+
+    <h2>Movie related stuffs</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"Everything will be alright in the end so if it is not alright it is not the end."<br><span>Deborah
+              Moggach, The Best Exotic Marigold Hotel</span></h4>
+        </div>
+        <div class="item">
+          <h4>"A beautiful movie, but predictable, full of romantic cliche ... oh, hey, Rickon Stark"<br>
+            <span>Love, Rosie</span></h4>
+        </div>
+        <div class="item">
+          <h4>"Thrilling, a literal adaptation of 'Go f**k yourself'"<br><span>Predestination</span></h4>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Container (Pricing Section) -->
+  <div id="pricing" class="container-fluid-hidden">
+    <div class="text-center">
+      <h2>Pricing</h2>
+      <h4>Choose a payment plan that works for you. Just click, nothing will happen to you!</h4>
+    </div>
+    <div class="row slideanim">
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Basic</h1>
+          </div>
+          <div class="panel-body">
+            <p><strong>20</strong> Lorem</p>
+            <p><strong>15</strong> Ipsum</p>
+            <p><strong>5</strong> Dolor</p>
+            <p><strong>2</strong> Sit</p>
+            <p><strong>Endless</strong> Amet</p>
+          </div>
+          <div class="panel-footer">
+            <h3>$19</h3>
+            <h4>per month</h4>
+            <button class="btn btn-lg">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Pro</h1>
+          </div>
+          <div class="panel-body">
+            <p><strong>50</strong> Lorem</p>
+            <p><strong>25</strong> Ipsum</p>
+            <p><strong>10</strong> Dolor</p>
+            <p><strong>5</strong> Sit</p>
+            <p><strong>Endless</strong> Amet</p>
+          </div>
+          <div class="panel-footer">
+            <h3>$29</h3>
+            <h4>per month</h4>
+            <button class="btn btn-lg">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Premium</h1>
+          </div>
+          <div class="panel-body">
+            <p><strong>100</strong> Lorem</p>
+            <p><strong>50</strong> Ipsum</p>
+            <p><strong>25</strong> Dolor</p>
+            <p><strong>10</strong> Sit</p>
+            <p><strong>Endless</strong> Amet</p>
+          </div>
+          <div class="panel-footer">
+            <h3>$49</h3>
+            <h4>per month</h4>
+            <button class="btn btn-lg">Sign Up</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div><br>
+  </div>
 
-  <h2>Movie related stuffs</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"Everything will be alright in the end so if it is not alright it is not the end."<br><span>Deborah Moggach, The Best Exotic Marigold Hotel</span></h4>
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Don't bother, the form does not work (for now).</p>
       </div>
-      <div class="item">
-        <h4>"A beautiful movie, but predictable, full of romantic cliche ... oh, hey, Rickon Stark"<br>
-          <span>Love, Rosie</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Thrilling, a literal adaptation of 'Go f**k yourself'"<br><span>Predestination</span></h4>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>About this page</h2><br>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+        <p>It is hosted on Github personal page. The theme is <i>Bootstrap Company </i>  from the educational website <a href="www.w3schools.com"> W3Schools. </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Google Maps -->
+  <div id="googleMap" style="height:400px;width:100%;"></div>
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+    <p></p>
+  </footer>
 
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid-hidden">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you. Just click, nothing will happen to you!</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Due to technical issues, the form does not work (for now).</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Singapore</p>
-      <!--<p><span class="glyphicon glyphicon-phone"></span>  </p>-->
-      <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:tamhd.nus@gmail.com?Subject=Hello" target="_top">tamhd.nus@gmail.com</a></p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>About this page</h2><br>
-      <p>This is the second version of my homepage. The first version can be found <a href="index.v1.html">here</a></a> </p>
+          // Store hash
+          var hash = this.hash;
 
-      <p>A special thank to the author of the <a href="www.w3schools.com"> Bootstrap Theme - Company </a>,
-        which inspires me to create this page. If anyone is keen on my version, just drop me an email.
-      </p>
-    </div>
-  </div>
-</div>
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p></p>
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
 
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+  </script>
 
 </body>
+
 </html>
