@@ -284,10 +284,10 @@
         <p>Formally, please follow any of the following resources for further information:</p>
         <a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/duc-tam-hoang-51431761/">LinkedIn</a>
         <CODE><A  class="btn btn-default btn-lg"  HREF="mailto:tamhd.nus@gmail.com">Email</A></CODE>
-        <a class="btn btn-default btn-lg" href="tamhd_2.png">Formal CV</a>
+        <a class="btn btn-default btn-lg" href="tamhd_2.png" onclick="cvFunction()">Formal CV</a>
         <A class="btn btn-default btn-lg" HREF="publications.html">Publications</A>
         <br>
-        <h6><i>* The CV is outdated, but my personal email is still <a href="mailto:tamhd.nus@gmail.com">active</a></i>
+        <!-- <h6><i>* The CV is outdated, but my personal email is still <a href="mailto:tamhd.nus@gmail.com">active</a></i> -->
         </h6>
       </div>
       <div class="col-sm-4">
@@ -696,7 +696,11 @@
       });
     })
   </script>
-
+  <script>
+    function cvFunction() {
+      alert("The CV is outdated, checkout my email instead!");
+    }
+  </script>
 </body>
 
 </html>
