@@ -54,7 +54,6 @@ class PasswordManager {
         if (this.password.length >= 8) {
             return true;
         }
-        alert("short");
         return false;
     }
 
