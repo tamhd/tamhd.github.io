@@ -6,7 +6,6 @@
  * Revision 1: This local copy for personal use, in case the original site by Ho Ngoc Duc is down
  */
 
-var ABOUT = "\u00C2m l\u1ECBch Vi\u1EC7t Nam - Version 0.8"+"\n\u00A9 2004 H\u1ED3 Ng\u1ECDc \u0110\u1EE9c [http://come.to/duc]";
 var TK19 = new Array(
 	0x30baa3, 0x56ab50, 0x422ba0, 0x2cab61, 0x52a370, 0x3c51e8, 0x60d160, 0x4ae4b0, 0x376926, 0x58daa0,
 	0x445b50, 0x3116d2, 0x562ae0, 0x3ea2e0, 0x28e2d2, 0x4ec950, 0x38d556, 0x5cb520, 0x46b690, 0x325da4,
@@ -381,8 +380,8 @@ function getGioHoangDao(jd) {
 
 var DAYNAMES = new Array("CN", "T2", "T3", "T4", "T5", "T6", "T7");
 var PRINT_OPTS = new OutputOptions();
-var FONT_SIZES = new Array("9pt", "13pt", "17pt");
-var TAB_WIDTHS = new Array("180px", "420px", "600px");
+var FONT_SIZES = new Array("9pt", "13pt", "17pt", "22pt");
+var TAB_WIDTHS = new Array("180px", "420px", "600px", "800px");
 
 function OutputOptions() {
 	this.fontSize = "13pt";
@@ -395,6 +394,8 @@ function setOutputSize(size) {
 		idx = 0;
 	} else if (size == "large") {
 		idx = 2;
+	} else if (size == "huge") {
+		idx = 3;
 	} else {
 		idx = 1;
 	}
@@ -526,7 +527,6 @@ function printHead(mm, yy) {
 	//res += ('<td colspan="1" class="navi-r"><a href="'+getNextMonthLink(mm, yy)+'"><img src="right1.gif" alt="Next"></a></td>\n');
 	res += ('<td colspan="2" class="navi-r">'+getNextMonthLink(mm, yy)+' &nbsp;'+getNextYearLink(mm, yy)+'</td></tr>\n');
 	//res += ('<tr><td colspan="7" class="tenthang"><a href="'+getNextMonthLink(mm, yy)+'"><img src="right.gif" alt="Next"></a></td></tr>\n');
-	res += ('<tr onClick="alertAbout();">\n');
 	for(var i=0;i<=6;i++) {
 		res += ('<td class=ngaytuan>'+DAYNAMES[i]+'</td>\n');
 	}
@@ -584,7 +584,6 @@ function showMonthSelect() {
 	//var home = "http://www.informatik.uni-leipzig.de/~duc/amlich/JavaScript/";
 	// window.open(home, "win2702", "menubar=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,location=yes");
 	//window.location = home;
-	//alertAbout();
 }
 
 function showYearSelect() {
@@ -606,10 +605,6 @@ function alertDayInfo(dd, mm, yy, leap, jd, sday, smonth, syear) {
 	s += "\nTi\u1EBFt: "+TIETKHI[getSunLongitude(jd+1, 7.0)];
 	s += "\nGi\u1EDD ho\u00E0ng \u0111\u1EA1o: "+getGioHoangDao(jd);
 	alert(s);
-}
-
-function alertAbout() {
-	alert(ABOUT);
 }
 
 function showVietCal() {

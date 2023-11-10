@@ -23,7 +23,7 @@
 <script type="text/javascript">
 
 	function viewSelectedMonth() {
-		setOutputSize("large");
+		setOutputSize("huge");
 		var printCurrentMonth = printSelectedMonth();
 
         // Previous Month
@@ -32,14 +32,20 @@
 		var printPreviousMonth = printMonth(previousMonth, previousMonthYear);
 
         // Next Month
-        var nextMonth = currentMonth < 12 ? currentMonth+1 : 1;
-	    var nextMonthYear = currentMonth < 12 ? currentYear : currentYear+1;
-	    var printNextMonth = printMonth(nextMonth, nextMonthYear);
+		var nextMonths = new Array();
+		var nextMonthYears = new Array();
+
+		for (let counter = 1; counter < 5; counter++) {
+			nextMonths.push(currentMonth < 12-counter+1 ? currentMonth+counter : counter)
+			nextMonthYears.push(currentMonth < 12-counter+1 ? currentYear : currentYear+1);
+		}
 
 		document.open();
 		document.writeln(printPreviousMonth);
 		document.writeln(printCurrentMonth);
-		document.write(printNextMonth);
+		for (let iter = 0; iter < nextMonths.length; iter++) {
+			document.writeln(printMonth(nextMonths[iter], nextMonthYears[iter]));
+		}
 		document.close();
 	}
 	viewSelectedMonth();
